@@ -1,0 +1,219 @@
+@media screen and (max-width: 768px) {
+  /* General adjustments */
+  body {
+    overflow-x: hidden;
+  }
+
+  body.no-scroll {
+    overflow: hidden;
+  }
+
+  .container {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Hide custom scrollbar on mobile */
+  .custom-scrollbar {
+    display: none;
+  }
+
+  /* Typography adjustments */
+  .main-title {
+    font-size: 14vw;
+    text-align: center;
+  }
+
+  .prefix-head {
+    font-size: 5vw;
+  }
+
+  .sub-head {
+    font-size: 3.5vw;
+    line-height: 1.5;
+  }
+
+  .logo {
+    font-size: 6vw;
+  }
+
+  .abt-head {
+    font-size: 10vw;
+  }
+
+  .abt-para {
+    font-size: 4vw;
+  }
+
+  .text-content h3 {
+    font-size: 6vw;
+  }
+
+  .text-content h3 + p {
+    font-size: 4vw;
+  }
+
+  .my-skills-title {
+    font-size: 8vw;
+    text-align: center;
+  }
+
+  .skill-card h3 {
+    font-size: 4.5vw;
+  }
+
+  .work-card h3 {
+    font-size: 4.5vw;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 4vw;
+  }
+
+  .contact-form button {
+    font-size: 4.5vw;
+  }
+
+  .modal-content h2 {
+    font-size: 7vw;
+  }
+
+  .modal-content p {
+    font-size: 4vw;
+  }
+
+  .site-footer p {
+    font-size: 3.5vw;
+  }
+
+  /* Layout adjustments */
+  nav {
+    width: calc(100% - 8vw);
+    margin-left: 4vw;
+    padding: 1.39vh 4vw;
+    border-radius: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Full-screen Overlay Navigation */
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Start off-screen */
+    width: 100%;
+    height: 100vh;
+    background-color: var(--theme-primary);
+    transition: left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 999; /* Below nav, above content */
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .nav-links .uilink {
+    font-size: 6vw;
+    font-weight: bold;
+    color: var(--theme-text-primary);
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .my-avatar {
+    height: 45vh;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .lanading {
+    padding: 5vw;
+  }
+
+  .abt-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 3vh;
+  }
+
+  .abt-avatar {
+    transform: none;
+    opacity: 1;
+    width: 60vw;
+    margin-top: 3vh;
+  }
+
+  .skils-cont {
+    padding-inline: 5vw;
+  }
+
+  .skill-card {
+    width: 40vw;
+  }
+
+  .skill-card img {
+    height: 15vw;
+  }
+
+  .works-container {
+    padding-inline: 5vw;
+  }
+
+  .work-card {
+    width: 100%;
+  }
+
+  .contact-form {
+    max-width: 90vw;
+  }
+
+  /* Hamburger Menu */
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 1001; /* Ensure it's above the overlay */
+    padding: 10px;
+  }
+
+  .hamburger-menu .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 6px auto;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}

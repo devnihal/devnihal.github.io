@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile.css" />
+    <script src="./script.js" defer></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="nav-content">
+          <div class="logo"><span class="glow2">.</span>DEVNIHAL</div>
+          <button class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+          <ul class="nav-links">
+            <li class="nav-link">
+              <a
+                href="#home"
+                class="uilink home-link"
+                onclick="section=updateSlider(this)"
+                data-section="home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-link">
+              <a
+                href="#aboutme"
+                class="uilink abt-link"
+                data-section="aboutme"
+                onclick="updateSlider(this)"
+                >About Me</a
+              >
+            </li>
+            <li class="nav-link">
+              <a
+                href="#myskills"
+                class="uilink skills-link"
+                data-section="myskills"
+                onclick="updateSlider(this)"
+                >My Skills</a
+              >
+            </li>
+            <li class="nav-link">
+              <a
+                href="#myworks"
+                class="uilink works-link"
+                data-section="myworks"
+                onclick="updateSlider(this)"
+                >My Works</a
+              >
+            </li>
+            <li class="nav-link">
+              <a
+                href="#contact"
+                class="uilink contact-link"
+                data-section="contact"
+                onclick="updateSlider(this)"
+                >Contact</a
+              >
+            </li>
+            <div class="slider"></div>
+          </ul>
+        </div>
+      </nav>
+      <section class="lanading" id="home">
+        <div class="circle"></div>
+        <div class="grid"></div>
+        <div class="main-title">
+          <span class="prefix-head">Hi, I'm</span>
+          <span class="myname">
+            <span class="bubble" style="--i: 0">M</span>
+            <span class="bubble" style="--i: 1">o</span>
+            <span class="bubble" style="--i: 2">h</span>
+            <span class="bubble" style="--i: 3">a</span>
+            <span class="bubble" style="--i: 4">m</span>
+            <span class="bubble" style="--i: 5">m</span>
+            <span class="bubble" style="--i: 6">e</span>
+            <span class="bubble" style="--i: 7">d</span>
+            <span class="bubble" style="--i: 8">&nbsp;</span>
+            <span class="bubble" style="--i: 9">N</span>
+            <span class="bubble" style="--i: 10">i</span>
+            <span class="bubble" style="--i: 11">h</span>
+            <span class="bubble" style="--i: 12">a</span>
+            <span class="bubble" style="--i: 13">l</span>
+          </span>
+          <span class="sub-head">
+            Computer Science student passionate about building
+            <span> <span class="glow">impactful</span> software.</span>
+          </span>
+        </div>
+        <div href="" class="bt-txt">
+          <span class="hovlight"></span>
+          <span class="hovlight">I</span>
+          <span class="hovlight">N</span>
+          <span class="hovlight">N</span>
+          <span class="hovlight">O</span>
+          <span class="hovlight">V</span>
+          <span class="hovlight">A</span>
+          <span class="hovlight">T</span>
+          <span class="hovlight">E</span>
+          <span class="hovlight"></span>
+        </div>
+        <a href="#aboutme" class="learn-about-me-button">
+          <span class="whoamitext">About Me</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="40"
+            fill="white"
+            viewBox="0 0 448 512"
+          >
+            <path
+              d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"
+            />
+          </svg>
+        </a>
+        <img src="./assets/avatar.png" class="my-avatar" alt="avatar" />
+      </section>
+      <section class="about-me lanading" id="aboutme">
+        <div class="abt-content">
+          <div class="text-content">
+            <h1 class="abt-head text-white">
+              <svg
+                viewBox="0 0 600 70"
+                width="100%"
+                height="100%"
+                style="display: block"
+              >
+                <text
+                  x="0"
+                  y="60"
+                  stroke="white"
+                  fill="transparent"
+                  stroke-width="0.1"
+                  class="stroke-fill-text"
+                >
+                  Who I Am
+                </text>
+              </svg>
+            </h1>
+            <p class="text-white abt-para">
+              <span class="fill-text-about">
+                I&apos;m Mohammed Nihal, a self-taught front-end developer and
+                graphic designer from Kasaragod, Kerala — currently pursuing
+                Computer Science and Engineering. I began by designing websites
+                and logos for small startups on a tight budget, driven by a
+                passion to support local ideas with great design. Now, I&apos;m
+                exploring everything from UI development to native tools, always
+                learning and building with curiosity. I care deeply about
+                thoughtful, secure, and human-centered software.</span
+              >
+            </p>
+            <br /><br />
+            <h3 class="text-white my-vision-title">My Vision</h3>
+            <p class="text-white my-vision-content">
+              To master programming at a fundamental level and build secure,
+              intelligent systems that solve real-world problems — with clarity,
+              care, and creativity.
+            </p>
+            <br />
+            <h3 class="text-white my-mission-title">My Mission</h3>
+            <p class="text-white my-mission-content">
+              To continuously learn, design, and develop tools that empower
+              people — combining thoughtful interfaces with powerful, reliable
+              code that makes technology feel intuitive and meaningful.
+            </p>
+          </div>
+          <img src="./assets/avhead.png" class="abt-avatar" alt="avt" />
+        </div>
+      </section>
+      <section class="lanading" id="myskills">
+        <div class="skils-cont">
+          <h1 class="text-white my-skills-title">My Toolbox</h1>
+          <div class="skils-card-container">
+            <div class="skill-card hidden" style="--i: 1; --e: 14">
+              <img src="./assets/Python.svg" alt="" />
+              <h3 class="text-white">Python</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 2; --e: 13">
+              <img src="./assets/HTML5_log.svg" alt="" />
+              <h3 class="text-white">HTML</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 3; --e: 12">
+              <img src="./assets/CSS3_logo.svg" alt="" />
+              <h3 class="text-white">CSS</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 4; --e: 11">
+              <img src="./assets/js.svg" alt="" />
+              <h3 class="text-white">JavaScript</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 5; --e: 10">
+              <img src="./assets/React-icon.svg" alt="" />
+              <h3 class="text-white">React</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 6; --e: 9">
+              <img src="./assets/Node.js_logo.svg" alt="" />
+              <h3 class="text-white">Node.js</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 7; --e: 8">
+              <img src="./assets/mysql.svg" alt="" />
+              <h3 class="text-white">MySQL</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 8; --e: 7">
+              <img src="./assets/PHP-logo.svg" alt="" />
+              <h3 class="text-white">PHP</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 9; --e: 6">
+              <img src="./assets/Tux.svg" alt="" />
+              <h3 class="text-white">Linux</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 10; --e: 5">
+              <img src="./assets/git.svg" alt="" />
+              <h3 class="text-white">Git</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 11; --e: 4">
+              <img src="./assets/Inkscape_Logo.svg" alt="" />
+              <h3 class="text-white">Inkscape</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 12; --e: 3">
+              <img src="./assets/Photopea_logo.svg" alt="" />
+              <h3 class="text-white">Photopea</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 13; --e: 2">
+              <img src="./assets/Figma-logo.svg" alt="" />
+              <h3 class="text-white">Figma</h3>
+            </div>
+            <div class="skill-card hidden" style="--i: 14; --e: 1">
+              <img src="./assets/vscode.svg" alt="" />
+              <h3 class="text-white">VSCode</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lanading" id="myworks">
+        <div class="works-container">
+          <h1 class="text-white my-skills-title">
+            <img src="./assets/typin.png" class="typin-image" alt="" />
+            MY PROJECTS
+          </h1>
+          <div class="works-box">
+            <div class="work-card hidden" style="--i: 1; --e: 7">
+              <img src="./assets/kasaroam.png" alt="" />
+              <h3 class="text-white" class="work-cap">LOGO - Kasaroam</h3>
+            </div>
+            <div class="work-card hidden" style="--i: 2; --e: 6">
+              <img src="./assets/coders.png" alt="" />
+              <h3 class="text-white" class="work-cap">LOGO - Coders Club</h3>
+            </div>
+            <div class="work-card hidden" style="--i: 3; --e: 5">
+              <img src="./assets/two sisters.png" alt="" />
+              <h3 class="text-white" class="work-cap">LOGO - Two Sisters</h3>
+            </div>
+            <div class="work-card hidden" style="--i: 4; --e: 4">
+              <img src="./assets/canny-ray.png" alt="" />
+              <h3 class="text-white" class="work-cap">LOGO - Canny Ray</h3>
+            </div>
+            <div class="work-card hidden" style="--i: 5; --e: 3">
+              <img src="./assets/cannyray.png" alt="" />
+              <h3 class="text-white" class="work-cap">Website - Canny Ray</h3>
+            </div>
+            <div class="work-card hidden" style="--i: 6; --e: 2">
+              <img src="./assets/le-ash.png" alt="" />
+              <h3 class="text-white" class="work-cap">Website - le-ash</h3>
+            </div>
+            <div class="work-card hidden" style="--i: 7; --e: 1">
+              <div class="dual-poster">
+                <img src="./assets/grc.png" alt="" />
+                <img src="./assets/gri.png" alt="" />
+              </div>
+              <h3 class="text-white" class="work-cap">Posters - GoldRock</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lanading" id="contact">
+        <div class="contact-container">
+          <h1 class="text-white my-skills-title">Contact Me</h1>
+          <form
+            class="contact-form"
+            action="https://script.google.com/macros/s/AKfycbw5KFudThaiejaN_lEGTES9KukGXDh_ZlEgdI0cXblhnVxgpRXDxhmOK8ns-4NkmpQ7/exec"
+            method="POST"
+            onsubmit="handleFormSubmit(event)"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="hidden"
+              style="--i: 1; --e: 4"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="hidden"
+              style="--i: 2; --e: 3"
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              class="hidden"
+              style="--i: 3; --e: 2"
+            ></textarea>
+            <button type="submit" class="hidden" style="--i: 4; --e: 1">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p>&copy; 2025 Mohammed Nihal. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://linkedin.com/in/devnihal" class="social-link">
+              <img src="./assets/LinkedIn_icon.svg" width="50" alt="linkedin" />
+            </a>
+            <a href="https://github.com/devnihal" class="social-link">
+              <img
+                src="./assets/github-mark-white.svg"
+                width="50"
+                alt="github"
+              />
+            </a>
+            <a href="https://x.com/devnihal_" class="social-link">
+              <img src="./assets/X_logo.svg" width="50" alt="X" />
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="custom-scrollbar" id="custom-scrollbar"></div>
+    <div id="success-modal" class="modal-hidden">
+      <div class="modal-content">
+        <h2 class="text-white">Success!</h2>
+        <p class="text-white">
+          Your message has been sent. Thank you for reaching out!
+        </p>
+        <button id="close-modal-btn">Close</button>
+      </div>
+    </div>
+    <div id="error-modal" class="modal-hidden">
+      <div class="modal-content">
+        <h2 class="text-white">Error!</h2>
+        <p class="text-white">
+          Oops! Something went wrong. Please try again later.
+        </p>
+        <button id="close-error-modal-btn">Close</button>
+      </div>
+    </div>
+  </body>
+</html>
